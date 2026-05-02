@@ -1,6 +1,6 @@
 PROGRAM A07
 VAR
-	FbCyl:ARRAY[0..200] OF Fb_cylctrl;//气缸功能块实例化
+	FbCyl:ARRAY[0..50] OF Fb_cylctrl;//气缸功能块实例化
 	
 	
 END_VAR

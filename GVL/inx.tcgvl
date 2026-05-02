@@ -1,7 +1,7 @@
 {attribute 'qualified_only'}
 VAR_GLOBAL//输入信号延时定时器
 	T0:ARRAY[0..7] OF TON;
-	CylHP:ARRAY[0..500] OF BOOL;//气缸原位信号
-	CylWP:ARRAY[0..500] OF BOOL;//气缸工位信号
-    Sensor:ARRAY[0..500] OF BOOL;//传感器信号
+	CylHP:ARRAY[0..100] OF BOOL;//气缸原位信号
+	CylWP:ARRAY[0..100] OF BOOL;//气缸工位信号
+    Sensor:ARRAY[0..100] OF BOOL;//传感器信号
 END_VAR
