@@ -1,0 +1,9 @@
+TYPE ST_MotorTip ://气缸反馈信号结构体
+STRUCT
+	xAlm:BOOL;//电机工作报警
+	xHomePos:BOOL;//电机反转到位OK
+	xWorkPos:BOOL;//电机正转到位OK
+	xHomeOut:BOOL;//电机反转输出
+	xWorkOut:BOOL;//电机正转输出
+END_STRUCT
+END_TYPE

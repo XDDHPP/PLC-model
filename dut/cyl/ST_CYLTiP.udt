@@ -1,0 +1,12 @@
+TYPE ST_CYLTiP ://气缸反馈信号结构体
+STRUCT
+	xHomeAlm:BOOL;//气缸回原位超时报警
+	xWorkAlm:BOOL;//气缸到工位超时报警
+	xHomeTip:BOOL;//自动切手动再切自动，原位提示
+	xWorkTip:BOOL;//自动切手动再切自动，工位提示
+	xHomePos:BOOL;//气缸回原位OK
+	xWorkPos:BOOL;//气缸到工位OK
+	xHomeOut:BOOL;//气缸原位输出
+	xWorkOut:BOOL;//气缸工位输出
+END_STRUCT
+END_TYPE

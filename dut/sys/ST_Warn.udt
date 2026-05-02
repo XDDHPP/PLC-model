@@ -1,0 +1,7 @@
+TYPE ST_Warn :
+STRUCT
+	iSwitch:INT;//手自动切换提示字
+    ialming:INT;//报警字
+	iManuling:INT;//手动操作中
+END_STRUCT
+END_TYPE

@@ -1,0 +1,15 @@
+TYPE ST_SVPARLR ://伺服参数
+STRUCT
+LrJogVel:LREAL;//点动速度
+LrAcce:LREAL;//加速度
+LrDece:LREAL;//减速度
+LrZeroPos:LREAL;//零点标定	
+LrAbsPos:LREAL;//绝对定位位置
+LrAbsVel:LREAL;//绝对定位速度
+LrRelatePos:LREAL;//相对定位位置
+LrRelateVel:LREAL;//相对定位速度
+END_STRUCT
+END_TYPE
+
+
+

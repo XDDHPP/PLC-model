@@ -1,0 +1,9 @@
+TYPE ST_RCP ://配方库结构体
+STRUCT
+    NO:INT;//配方编号
+	Name:STRING[50];//配方名称
+	SetValve:ARRAY[0..50] OF REAL;//检测评判值
+	ParValve:ARRAY[0..50] OF INT;//参数设置屏蔽
+	AX:ARRAY[0..31] OF ST_SVdata;//位置与速度,预封装32个轴的
+END_STRUCT
+END_TYPE

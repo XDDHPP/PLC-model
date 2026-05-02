@@ -1,0 +1,27 @@
+{attribute 'qualified_only'}
+VAR_GLOBAL
+	xP_On:BOOL;//常通信号
+	xP_Frist:BOOL;//上电第一次扫描
+	xP_Off:BOOL;//常断信号
+	xP_10ms:BOOL;//10ms脉冲
+	xP_100ms:BOOL;//100MS脉冲
+	xP_1s:BOOL;//1s脉冲
+	xPlcOk:BOOL;//PLC上电OK
+	TPlcOk:TON;//PLC上电OK延时
+	xHomeDone:BOOL;//回原完成
+	Warn:ST_Warn;
+	HmiB :ST_button;//触摸屏按钮
+	HardB :ST_button;//硬件接线按钮
+	SysB :ST_button;//系统按钮
+	State :ST_SYS ;//系统设备状态
+	Tip:ST_bit16 ;//系统状态灯
+	
+	CurrentPic:INT;//触摸屏当前页面
+	ShowPic:ARRAY[0..2] OF INT;//切换画面
+	xClear:BOOL;//日产量清零
+	xTotClear:BOOL;//总产量清零
+	xdateClear:BOOL;//运行时间清零
+	Report:ST_Report;//设备节拍产量
+	ENVSet:ST_bit16 ;//环境设置,门开关，光栅等屏蔽
+	
+END_VAR

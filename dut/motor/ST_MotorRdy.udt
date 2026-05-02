@@ -1,0 +1,9 @@
+TYPE ST_MotorRdy :
+STRUCT
+	xMotorRdy:BOOL;//电机就绪信号，未报警
+	xHomeSensor:BOOL;//电机反转到位信号
+	xWorkSensor:BOOL;//电机正转到位信号
+	xHomeSafe:BOOL;//允许电机反转安全信号
+	xWorkSafe:BOOL;//允许电机正转安全信号
+END_STRUCT
+END_TYPE

@@ -1,0 +1,15 @@
+TYPE ST_Report :
+STRUCT
+dDayOutput:DINT;//日产量
+dDayNG:DINT;//日不良品
+dDayOK:DINT;//日良品
+dTotalOutput:DINT;//总产品
+dTotalNG:DINT;//总不良品
+dTotalOK:DINT;//总良品
+iHour:INT;//设备自动总时间-时
+iMin:INT;//设备自动总时间-分
+iSec:INT;//设备自动总时间-秒
+iCT:INT;//设备自动运行节拍
+	
+END_STRUCT
+END_TYPE

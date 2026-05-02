@@ -1,0 +1,6 @@
+TYPE ST_CylAuto ://气缸控制结构体
+STRUCT
+	xAutoctr:BOOL;//气缸自动控制启动
+	iAutoCtr:INT;//气缸自动，1回原位，2到工位
+END_STRUCT
+END_TYPE

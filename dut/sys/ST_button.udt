@@ -1,0 +1,12 @@
+TYPE ST_button ://按钮结构体
+STRUCT
+	xEstop:BOOL;//急停按钮
+	xStop:BOOL;//停止按钮
+	xHalt:BOOL;//暂停按钮
+	xStart:BOOL;//启动按钮
+	xAlmRst:BOOL;//报警复位
+	xSysRst:BOOL;//系统复位
+	xPar:BOOL;//参数设置
+	xManulTp:BOOL;//触摸屏手动画面切换
+END_STRUCT
+END_TYPE

@@ -1,0 +1,24 @@
+VAR_GLOBAL   
+	PvRcp : ST_RCP;//当前配方
+	SvRcp : ST_RCP;//设定配方
+	LibRcp : ARRAY [0..50] OF ST_RCP;//配方库
+	PreRcp : ST_RCP;//选择配方预显示
+	PvNo : INT;//当前配方号
+	SvNo : INT;//设定配方号
+
+	xSeting : BOOL;//设定中
+
+	//选择配方使用
+	xSelect:BOOL;//配方选择
+	xSelectInc : BOOL;//配方选择加
+	xSelectDec : BOOL;//配方选择减
+	xSelectOK  : BOOL;//配方选择确认
+
+	// 设定/修改配方
+	xRcpSet: BOOL;//配方设定
+	xSetOk : BOOL;//配方设定确认
+	xSetNg : BOOL;//配方设定取消
+
+	
+	
+END_VAR

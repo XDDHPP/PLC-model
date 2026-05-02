@@ -1,0 +1,6 @@
+TYPE ST_SVdata :
+STRUCT
+	aPOS:ARRAY[0..31]OF REAL;//伺服定位位置
+	aVEL:ARRAY[0..31]OF REAL;//伺服定位速度
+END_STRUCT
+END_TYPE

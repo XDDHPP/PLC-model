@@ -1,0 +1,11 @@
+TYPE ST_AxisOUT :
+STRUCT
+xhomeMark:BOOL;//回原OK标记
+xTip:BOOL;//手自动位置不一样的
+SVOUT:ST_SVOUT;//伺服指令反馈输出信号
+Station:ST_SVSTATE ;//伺服当前状态
+iHposID:INT;//手动定位编号
+iposID:INT;//伺服定位编号
+iPOSTIP:INT;//自动停机编号提示
+END_STRUCT
+END_TYPE

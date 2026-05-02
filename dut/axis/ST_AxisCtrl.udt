@@ -1,0 +1,11 @@
+TYPE ST_AxisCtrl :
+STRUCT
+	EnaSafe: ST_SVEna;//伺服定位安全允许信号
+    Autoin:ST_SVIN ;//伺服自动控制
+	xEnaAct:BOOL;//允许执行流程信号
+	xAbsolute:BOOL;//伺服是否绝对式
+	iAposID:INT;//自动定位编号
+	
+END_STRUCT
+END_TYPE
+

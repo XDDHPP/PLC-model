@@ -1,0 +1,9 @@
+TYPE ST_SVPAR ://伺服参数
+STRUCT
+rJogVel:REAL;//点动速度
+rAcce:REAL:=1000;//加速度
+rDece:REAL:=1000;//减速度
+rZeroPos:REAL;//零点标定	
+
+END_STRUCT
+END_TYPE

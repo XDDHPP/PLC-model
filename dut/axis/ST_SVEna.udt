@@ -1,0 +1,9 @@
+TYPE ST_SVEna :
+STRUCT
+xAXread:BOOL;//电机就绪信号，没有报警
+xJogPsafe:BOOL;//伺服点动正安全允许信号
+xJogNsafe:BOOL;//伺服点动负安全允许信号	
+xActSafe:BOOL;//伺服定位安全允许信号
+xHaltSelect:BOOL;//伺服暂停选择
+END_STRUCT
+END_TYPE

@@ -1,0 +1,8 @@
+TYPE ST_MotorHMI :
+STRUCT
+	xHomeTp:BOOL;//电机点动负向
+	xWorkTp:BOOL;//电机点动正向
+	xOnlineH:BOOL;//电机联动手动负向
+	xOnlineW:BOOL;//电机联动手动正向
+END_STRUCT
+END_TYPE

@@ -1,0 +1,7 @@
+TYPE ST_AxHmi :
+STRUCT
+	 Handin:ST_SVIN ;//伺服手动控制
+	 buttonin:ARRAY [0..31] OF BOOL;//手动定位的32位
+	 SVPAR:ST_SVPAR ;//伺服参数
+END_STRUCT
+END_TYPE

@@ -1,0 +1,24 @@
+TYPE ST_SYS :
+STRUCT
+	xEstop:BOOL;//急停按钮
+	xStop:BOOL;//停止按钮
+	xHalt:BOOL;//暂停按钮
+	xStart:BOOL;//启动按钮
+	xAlmRst:BOOL;//报警复位
+	xSysRst:BOOL;//系统复位
+	xPlcOk:BOOL;//PLC上电OK
+	
+	xIdle:BOOL;//设备待机中
+	xManulEna:BOOL;//手动允许
+	xAlming:BOOL;//报警中
+	xHoming:BOOL;//设备回原中
+	xHomeDone:BOOL;//回原完成
+	xHomeOK:BOOL;//回原OK标记
+	
+	xAutoEna:BOOL;//自动状态
+	xAutoStart:BOOL;//自动运行中
+	xAutoHalt:BOOL;//自动暂停中
+	xAutoLock:BOOL;//自动锁机
+
+END_STRUCT
+END_TYPE

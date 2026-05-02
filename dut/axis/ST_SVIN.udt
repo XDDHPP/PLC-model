@@ -1,0 +1,12 @@
+TYPE ST_SVIN ://伺服触发指令结构体
+STRUCT
+    xPwoer:BOOL;//伺服使能
+	xJogp:BOOL;//点动正向
+	xJogn:BOOL;//点动反向
+	xHome:BOOL;//回原触发
+	xAbs:BOOL;//绝对定位
+	xRelat:BOOL;//相对定位	
+	xHalt:BOOL;//轴暂停
+	xTeachSave:BOOL;//示教保存
+END_STRUCT
+END_TYPE

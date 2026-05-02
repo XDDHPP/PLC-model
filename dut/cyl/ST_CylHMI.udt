@@ -1,0 +1,6 @@
+TYPE ST_CylHMI :
+STRUCT
+	xHomeTp:BOOL;//气缸手动回原位
+	xWorkTp:BOOL;//气缸手动到工位
+END_STRUCT
+END_TYPE

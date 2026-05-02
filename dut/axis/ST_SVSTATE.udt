@@ -1,0 +1,9 @@
+TYPE ST_SVSTATE ://伺服当前状态DUT
+STRUCT
+rActPos:REAL;//当前位置	
+rActVel:REAL;//当前速度
+rActTor:REAL;//当前扭矩
+uActSvErr:UINT;//驱动错误代码
+DActAxisErr:DWORD;//轴错误代码	
+END_STRUCT
+END_TYPE

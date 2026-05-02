@@ -1,0 +1,8 @@
+TYPE ST_CylRdy :
+STRUCT
+	xHomeSensor:BOOL;//气缸原位信号
+	xWorkSensor:BOOL;//气缸工位信号
+	xHomeSafe:BOOL;//允许气缸回原位安全信号
+	xWorkSafe:BOOL;//允许气缸到工位安全信号
+END_STRUCT
+END_TYPE

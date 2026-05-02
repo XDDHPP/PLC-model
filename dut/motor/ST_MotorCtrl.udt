@@ -1,0 +1,6 @@
+TYPE ST_MotorCtrl ://电机控制结构体
+STRUCT
+	xAutofW:BOOL;//电机自动进
+	xAutoBW:BOOL;//电机自动退
+END_STRUCT
+END_TYPE

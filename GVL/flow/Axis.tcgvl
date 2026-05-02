@@ -1,0 +1,4 @@
+{attribute 'qualified_only'}
+VAR_GLOBAL //信号和流程
+	Cmd:ARRAY[0..31] OF ST_AxisCtrl;//伺服控制
+END_VAR

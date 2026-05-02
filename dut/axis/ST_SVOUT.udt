@@ -1,0 +1,17 @@
+TYPE ST_SVOUT ://伺服指令反馈信号
+STRUCT
+xAxisErr:BOOL;//轴报错	
+xpowerOK:BOOL;//使能OK
+xPowerBusy:BOOL;//使能 中
+xJogPout:BOOL;//点动正反馈信号
+xJogNout:BOOL;//点动负反馈信号
+xHomeOK:BOOL;//回原OK
+XHomeBusy:BOOL;//回原 中
+xHomeMark:BOOL;//回原OK标记
+xAbsOK:BOOL;//绝对定位OK
+xAbsBusy:BOOL;//绝对定位 中
+XRelatOK:BOOL;//相对定位OK
+XRelatBusy:BOOL;//相对定位 中
+xActRDY:BOOL;//定位准备OK信号
+END_STRUCT
+END_TYPE

@@ -1,0 +1,6 @@
+{attribute 'qualified_only'}
+VAR_GLOBAL
+	alm:ARRAY[0..500] OF BOOL;//报警
+	tip:ARRAY[0..500] OF BOOL;//设备操作提示
+	Automanul:ARRAY[0..500] OF BOOL;//自动切手动再切自动安全提示
+END_VAR
