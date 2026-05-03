@@ -69,7 +69,7 @@ IF State.xAutoStart THEN //设备自动运行时
 	//气缸自动工位
 	IF  CylRdy.xWorkSafe AND AutoCyl.xAutoCtr AND AutoCyl.iAutoCtr=2 THEN
 		iTotCtr:=2;
-	END_IF
+	END_IF;
 END_IF;  
 
 //气缸自动信号复位
@@ -175,13 +175,13 @@ END_IF
 // 气缸自动且手动，再切自动，继续跑自动，安全提示
 //自动锁机信号处理
 IF State.xManulEna  THEN //手动模式下
-	 IF  iManulCtr =  AutoCyl.iAutoCtr THEN //手自动状态不一致
+	 IF  iManulCtr =  AutoCyl.iAutoCtr THEN //手自动状态一致
 		  VAutoLock := FALSE; // 当前状态与期望状态一致，解锁自动运行
 		 CYLTiP.xHomeTip:=FALSE ;//气缸不在原位,无法启动
 	 	 CYLTiP.xWorkTip:= FALSE ;//气缸不在工位,无法启动
 	ELSE
 		VAutoLock := TRUE; // 当前状态与期望状态不一致，锁定自动运行;
-	END_IF	;
+	END_IF;
 END_IF;
 
 

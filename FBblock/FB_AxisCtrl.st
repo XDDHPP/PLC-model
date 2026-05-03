@@ -261,7 +261,7 @@ END_IF;
 
 //伺服手动与自动定位汇总
 
-TAbs (IN:= xAbsAct AND AxisIn.EnaSafe.xActSafe  ,
+TAbs (IN:= xAbsAct AND AxisIn.EnaSafe.xActSafe,
        PT:=T#10MS,Q=>vSvin.xAbs);
 
 
