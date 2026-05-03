@@ -1,0 +1,5 @@
+TYPE ST_buffer :
+STRUCT
+	Cache:ARRAY[0..10]OF DINT;//缓存
+END_STRUCT
+END_TYPE
