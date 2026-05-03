@@ -97,6 +97,14 @@ PLC-model/
 - 安全信号丢失时立即停止轴运动
 - 急停信号触发时执行快速停止
 
+**TwinCAT MC 指令信号行为（重要）：**
+- MC 功能块（MC_MoveAbsolute / MC_Home / MC_Jog 等）的反馈信号（Done、Busy、Error 等）**跟随 Execute 实时变化**：
+  - `Execute=TRUE` 时，Busy/Done 根据运动状态实时更新
+  - `Execute=FALSE` 时，Done 立即变 FALSE（**不锁存**）
+- 本 FB 内部通过 `xAbsAct → TAbs(10ms) → vSvin.xAbs → MC.Execute` 链路驱动
+- 当 `vSvout.xAbsOK=TRUE` 时，复位逻辑将 `xAbsAct:=FALSE`，导致 Execute 归 FALSE，Done 随之自动归 FALSE
+- 因此流程侧 **不需要** 手动清除 `Autoin.xAbs`，`xAbsOK` 会随 Execute 自动复位，下一步的 `IF NOT xAbsOK THEN` 条件自然成立
+
 ### Fb_cylctrl - 气缸控制功能块
 
 气缸控制功能块管理气动执行元件，支持手动和自动两种控制模式。

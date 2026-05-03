@@ -8,14 +8,14 @@ END_VAR
 		
 //设备报警字
 Sys.Warn.ialming:=0;
-FOR i:=0 TO 499 BY 1 DO
+FOR i:=0 TO 100 BY 1 DO
 	IF almtip.alm[i] THEN
 		Sys.Warn.ialming:=i+1;
 	END_IF;
 END_FOR;
 //手自动状态不一致
 Sys.Warn.iSwitch:=0;
-FOR j:=0 TO 499 BY 1 DO
+FOR j:=0 TO 100 BY 1 DO
 	IF almtip.Automanul[j] THEN
 		Sys.Warn.iSwitch:=j+1;
 	END_IF;

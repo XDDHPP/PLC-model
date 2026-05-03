@@ -76,15 +76,14 @@ CASE 流程 OF
 	END_IF;
 
 	50://Z轴下降到取料位
-	IF tip.AXOUT[1].SVOUT.xAbsOK AND tip.AXOUT[2].SVOUT.xAbsOK THEN
-		IF NOT tip.AXOUT[3].SVOUT.xAbsOK THEN
-			Axis.Cmd[3].Autoin.xAbs:=TRUE;
-			Axis.Cmd[3].iAposID:=6;//6#取料位Z
-		ELSE
-			Axis.Cmd[3].iAposID:=0;
-			流程:=60;
-		END_IF;
+	IF NOT tip.AXOUT[3].SVOUT.xAbsOK THEN
+		Axis.Cmd[3].Autoin.xAbs:=TRUE;
+		Axis.Cmd[3].iAposID:=6;//6#取料位Z
+	ELSE
+		Axis.Cmd[3].iAposID:=0;
+		流程:=60;
 	END_IF;
+	
 
 	60://真空吸取
 	IF tip.AXOUT[3].SVOUT.xAbsOK THEN
